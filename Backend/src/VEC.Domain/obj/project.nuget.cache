@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2i4WQTB8LHRO02W2bxSGFM9kqtZ1d7W1Kg/k0qRf1LxsP/l4BcUPFF1zvjWoi+EjrRgiUfcVC5UYLgv35tPF5g==",
+  "dgSpecHash": "BcFGXz+HiR0Rpv6VRwiIC+Vo453gfb4fD9PvqkdtkVq+8RRZvvlNM8Rkz+PGCX07y1PAgOW79BmZd75ZrIh6jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

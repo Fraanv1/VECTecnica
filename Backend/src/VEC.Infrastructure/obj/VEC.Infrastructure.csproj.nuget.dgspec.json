@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {}
+    "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
+    "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
         "projectName": "VEC.Domain",
-        "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
+        "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
         "packagesPath": "C:\\Users\\Fraan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {
+    "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
         "projectName": "VEC.Infrastructure",
-        "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Fraan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -92,8 +92,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
-                "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj"
+              "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
+                "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj"
               }
             }
           }

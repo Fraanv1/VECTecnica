@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vmdex6uzFs4WVr+KvA4hSUBm4deedU0EXX1xPQyD7szrGFv7b7gAxtKyUdkRVa2VqkR7D16iaFW98jMJ817Zew==",
+  "dgSpecHash": "4nXw+OnaItRlF8urO0KiLChB/Y0OMsSZOi7k51eXSO0l/3L+FZr3lM6onepYgmr8XlTaRANnbZZsLMQD37ppWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fraan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Fraan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

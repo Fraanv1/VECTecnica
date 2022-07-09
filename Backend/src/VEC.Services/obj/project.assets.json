@@ -2231,11 +2231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
       "projectName": "VEC.Services",
-      "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
+      "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
       "packagesPath": "C:\\Users\\Fraan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Services\\obj\\",
+      "outputPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -2257,11 +2257,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
-              "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj"
+            "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj": {
+              "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj"
             },
-            "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj"
+            "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Infrastructure\\VEC.Infrastructure.csproj"
             }
           }
         }

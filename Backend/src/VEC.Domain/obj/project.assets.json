@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
       "projectName": "VEC.Domain",
-      "projectPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
+      "projectPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\VEC.Domain.csproj",
       "packagesPath": "C:\\Users\\Fraan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

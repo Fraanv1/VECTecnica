@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Awk6Gm7Qfq/SMy2w0cEBztJ7rXKOB/vbMZNB19yaWCe4oVApVY8RM55A7db05qwnuEbK+C1+3FekSstD4Nx5NA==",
+  "dgSpecHash": "+MkUH75OxIPq2x0IM4KolDWv6MmIL26fWIGA1vPbjPnlOklkB786Z6PRY07xJMyZB8M7AfEspUa/oe2R1XqJ8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\Stuff\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
+  "projectFilePath": "C:\\Users\\Fraan\\Desktop\\VECTecnica\\Backend\\src\\VEC.Services\\VEC.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fraan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Fraan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
