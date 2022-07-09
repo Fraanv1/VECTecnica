@@ -161,7 +161,6 @@
 			},
 			cancelar() {
 				this.modalAbierto = false
-				this.datosVehiculo = ''
 			},
 		},
 		mounted() {
