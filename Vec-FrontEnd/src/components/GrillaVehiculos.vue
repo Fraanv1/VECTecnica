@@ -5,14 +5,7 @@
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="pt-2 " style="text-align:center">
-					<div>
-						<button class="btn btn-primary" @click="showModal = !showModal">
-							+
-						</button>
-						<div>
-							<NuevoVehiculo :showModal="showModal"></NuevoVehiculo>
-						</div>
-					</div>
+					<NuevoVehiculo :loadedVehiculo="vehiculoCargado"></NuevoVehiculo>
 				</div>
 				<div class="card mt-4">
 					<div class="card-body">
@@ -41,11 +34,15 @@
 									<td>{{ vehiculo.chasis }}</td>
 									<td>{{ vehiculo.kmRecorridos }}</td>
 									<td>{{ vehiculo.kmMantenimiento }}</td>
+
 									<td style="text-align:center">
-										<button class="btn btn-danger mr-1" @click="showModal = !showModal">
+										<button
+											class="btn btn-danger mr-1"
+											@click="eliminarVehiculo(vehiculo.vehiculoId)"
+										>
 											🗑️
 										</button>
-										<button class="btn btn-primary " @click="showModal = !showModal">
+										<button class="btn btn-primary " @click="habilitarEdicion(vehiculo)">
 											✍️
 										</button>
 									</td>
@@ -77,17 +74,29 @@
 				vehiculo: '',
 				listVehiculos: [],
 				loading: false,
+				vehiculoCargado: '',
 			}
 		},
 		methods: {
 			obtenerTodosLosVehiculos() {
 				this.loading = true
-				VehiculosController.obtenerTodosLosVehiculos().then((response) => {
-					this.listVehiculos = response.data
-					this.loading = false
+				VehiculosController.obtenerTodosLosVehiculos()
+					.then((response) => {
+						this.listVehiculos = response.data
+						this.loading = false
+					})
+					.catch((error) => {
+						console.log(error)
+					})
+			},
+			eliminarVehiculo(vehiculoId) {
+				VehiculosController.eliminarVehiculo(vehiculoId).then(() => {
+					this.obtenerTodosLosVehiculos()
 				})
 			},
-			agregarVehiculo() {},
+			habilitarEdicion(vehiculoId) {
+				this.vehiculoCargado = vehiculoId
+			},
 		},
 		mounted() {
 			this.obtenerTodosLosVehiculos()
@@ -98,13 +107,5 @@
 <style scoped>
 	.cursor {
 		cursor: pointer;
-	}
-	.modal {
-		position: fixed;
-		z-index: 999;
-		top: 20%;
-		left: 50%;
-		width: 300px;
-		margin-left: -150px;
 	}
 </style>

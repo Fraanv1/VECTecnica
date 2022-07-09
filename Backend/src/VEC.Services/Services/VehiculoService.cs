@@ -99,5 +99,10 @@ public class VehiculoService : IVehiculoService
     {
         return await _context.Vehiculo.Where(x => x.Activo == true).ToListAsync();
     }
+
+    public async Task<Vehiculo> GetVehiculo(int vehiculoId)
+    {
+        return await _context.Vehiculo.Where(x => x.Activo == true && x.VehiculoId == vehiculoId).FirstOrDefaultAsync();
+    }
 }
 

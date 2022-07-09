@@ -7,24 +7,21 @@ export default {
 			url: `https://localhost:44368/api/v1/vehiculo`,
 		})
 	},
-	agregarVehiculo(vehiculo) {
+	obtenerVehiculo(vehiculoId) {
 		return axios({
-			method: 'POST',
-			url: `https://localhost:44368/api/v1/vehiculo`,
-			data: { vehiculo: vehiculo },
+			method: 'GET',
+			url: `https://localhost:44368/api/v1/vehiculo/getvehiculo?=vehiculoId=${vehiculoId}`,
 		})
+	},
+	agregarVehiculo(vehiculo) {
+		return axios.post(`https://localhost:44368/api/v1/vehiculo`, vehiculo)
 	},
 	modificarVehiculo(vehiculo) {
-		return axios({
-			method: 'PUT',
-			url: `https://localhost:44368/api/v1/vehiculo`,
-			data: { vehiculo: vehiculo },
-		})
+		return axios(`https://localhost:44368/api/v1/vehiculo`, vehiculo)
 	},
 	eliminarVehiculo(vehiculoId) {
-		return axios({
-			method: 'DELETE',
-			url: `https://localhost:44368/api/v1/vehiculo?vehiculoId=${vehiculoId}`,
-		})
+		return axios.delete(
+			`https://localhost:44368/api/v1/vehiculo?vehiculoId=${vehiculoId}`
+		)
 	},
 }

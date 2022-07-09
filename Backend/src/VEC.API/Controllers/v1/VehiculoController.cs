@@ -37,6 +37,15 @@ namespace VEC.API.Controllers.v1
             var vehiculos = await _vehiculoService.GetVehiculos();
 
             return vehiculos;
+        } 
+
+        [HttpGet]
+        [Route("GetVehiculo")]
+        public async Task<Vehiculo> GetVehiculo(int vehiculoId)
+        {
+            var vehiculos = await _vehiculoService.GetVehiculo(vehiculoId);
+
+            return vehiculos;
         }
 
         [HttpDelete]

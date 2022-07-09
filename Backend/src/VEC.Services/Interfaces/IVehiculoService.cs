@@ -10,6 +10,7 @@ namespace VEC.Services.Interfaces
         Task ModificarVehiculo(VehiculoDto vehiculo);
         Task EliminarVehiculo(int vehiculoId);
         Task<List<Vehiculo>> GetVehiculos();
+        Task<Vehiculo> GetVehiculo(int vehiculoId);
     }
 }
 
