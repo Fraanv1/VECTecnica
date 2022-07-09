@@ -93,7 +93,7 @@
 									</div>
 								</div>
 								<div class="pt-2 " style="text-align:right">
-									<button @click="modalAbierto = false" class="btn btn-danger mr-1">
+									<button @click="cancelar" class="btn btn-danger mr-1">
 										Cancelar
 									</button>
 									<button
@@ -117,6 +117,9 @@
 <script>
 	import VehiculosController from '../../api/VehiculosController'
 	export default {
+		props: {
+			loadedVehiculo: {},
+		},
 		data() {
 			return {
 				modalAbierto: false,
@@ -132,9 +135,7 @@
 				},
 			}
 		},
-		props: {
-			loadedVehiculo: {},
-		},
+
 		methods: {
 			agregarVehiculo() {
 				VehiculosController.agregarVehiculo(this.datosVehiculo)
@@ -158,28 +159,13 @@
 				)
 					return true
 			},
-			modificarVehiculo() {
-				VehiculosController.modificarVehiculo(this.datosVehiculo)
-					.then((response) => {
-						this.datosVehiculo = response.data
-					})
-					.catch((error) => {
-						console.error(error)
-					})
-			},
-			verificarSiEsModificacion() {
-				VehiculosController.obtenerVehiculo(this.loadedVehiculo)
-					.then((response) => {
-						console.log(response.data)
-					})
-					.catch((error) => {
-						console.error(error)
-					})
+			cancelar() {
+				this.modalAbierto = false
+				this.datosVehiculo = ''
 			},
 		},
 		mounted() {
 			this.verificarCamposVacios()
-			this.verificarSiEsModificacion()
 		},
 	}
 </script>

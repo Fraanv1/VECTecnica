@@ -66,7 +66,7 @@ public class VehiculoService : IVehiculoService
                 vehiculoViejo.Marca = vehiculo.Marca;
                 vehiculoViejo.Modelo = vehiculo.Modelo;
                 vehiculoViejo.Patente = vehiculo.Patente;
-                vehiculoViejo.Chasis = vehiculo.NumeroChasis;
+                vehiculoViejo.Chasis = vehiculo.Chasis;
                 vehiculoViejo.KmRecorridos = vehiculo.KmRecorridos;
                 vehiculoViejo.KmMantenimiento = vehiculo.KmMantenimiento;
                 _context.Vehiculo.Update(vehiculoViejo);

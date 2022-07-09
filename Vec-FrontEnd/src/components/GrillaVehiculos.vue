@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="pt-2 " style="text-align:center">
-					<NuevoVehiculo :loadedVehiculo="vehiculoCargado"></NuevoVehiculo>
+					<NuevoVehiculo></NuevoVehiculo>
 				</div>
 				<div class="card mt-4">
 					<div class="card-body">
@@ -36,15 +36,15 @@
 									<td>{{ vehiculo.kmMantenimiento }}</td>
 
 									<td style="text-align:center">
-										<button
-											class="btn btn-danger mr-1"
-											@click="eliminarVehiculo(vehiculo.vehiculoId)"
-										>
-											🗑️
-										</button>
-										<button class="btn btn-primary " @click="habilitarEdicion(vehiculo)">
-											✍️
-										</button>
+										<div class="form-row">
+											<button
+												class="btn btn-danger mr-1"
+												@click="eliminarVehiculo(vehiculo.vehiculoId)"
+											>
+												🗑️
+											</button>
+											<ModificarVehiculo :loadedVehiculo="vehiculo"></ModificarVehiculo>
+										</div>
 									</td>
 								</tr>
 							</tbody>
@@ -64,14 +64,14 @@
 
 <script>
 	import NuevoVehiculo from './Modals/NuevoVehiculo.vue'
+	import ModificarVehiculo from './Modals/ModificacionVehiculo.vue'
 	import VehiculosController from '../api/VehiculosController.js'
 	export default {
-		components: { NuevoVehiculo },
+		components: { NuevoVehiculo, ModificarVehiculo },
 		name: 'Tarea',
 		data() {
 			return {
 				showModal: false,
-				vehiculo: '',
 				listVehiculos: [],
 				loading: false,
 				vehiculoCargado: '',
@@ -94,7 +94,7 @@
 					this.obtenerTodosLosVehiculos()
 				})
 			},
-			habilitarEdicion(vehiculoId) {
+			asignarVehiculo(vehiculoId) {
 				this.vehiculoCargado = vehiculoId
 			},
 		},
