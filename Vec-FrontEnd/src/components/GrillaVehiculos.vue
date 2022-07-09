@@ -1,0 +1,110 @@
+<template>
+	<div>
+		<h1 class="display-4 text-center">CRUD Vehiculos</h1>
+		<hr />
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2">
+				<div class="pt-2 " style="text-align:center">
+					<div>
+						<button class="btn btn-primary" @click="showModal = !showModal">
+							+
+						</button>
+						<div>
+							<NuevoVehiculo :showModal="showModal"></NuevoVehiculo>
+						</div>
+					</div>
+				</div>
+				<div class="card mt-4">
+					<div class="card-body">
+						<h5 v-if="listVehiculos.length == 0">No hay vehiculos para ver</h5>
+						<table class="table table-bordered">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">Tipo de vehículo</th>
+									<th scope="col">Patente</th>
+									<th scope="col">Cantidad de ruedas</th>
+									<th scope="col">Marca</th>
+									<th scope="col">Modelo</th>
+									<th scope="col">N° de Chasis</th>
+									<th scope="col">KM's recorridos</th>
+									<th scope="col">KM's mantenmiento</th>
+									<th style="text-align:center" scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="(vehiculo, index) of listVehiculos" :key="index">
+									<th scope="row">{{ vehiculo.tipoVehiculo }}</th>
+									<td>{{ vehiculo.patente }}</td>
+									<td>{{ vehiculo.cantidadRuedas }}</td>
+									<td>{{ vehiculo.marca }}</td>
+									<td>{{ vehiculo.modelo }}</td>
+									<td>{{ vehiculo.chasis }}</td>
+									<td>{{ vehiculo.kmRecorridos }}</td>
+									<td>{{ vehiculo.kmMantenimiento }}</td>
+									<td style="text-align:center">
+										<button class="btn btn-danger mr-1" @click="showModal = !showModal">
+											🗑️
+										</button>
+										<button class="btn btn-primary " @click="showModal = !showModal">
+											✍️
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<div class="text-center">
+							<div v-if="loading" class="spinner-border text-success" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	import NuevoVehiculo from './Modals/NuevoVehiculo.vue'
+	import VehiculosController from '../api/VehiculosController.js'
+	export default {
+		components: { NuevoVehiculo },
+		name: 'Tarea',
+		data() {
+			return {
+				showModal: false,
+				vehiculo: '',
+				listVehiculos: [],
+				loading: false,
+			}
+		},
+		methods: {
+			obtenerTodosLosVehiculos() {
+				this.loading = true
+				VehiculosController.obtenerTodosLosVehiculos().then((response) => {
+					this.listVehiculos = response.data
+					this.loading = false
+				})
+			},
+			agregarVehiculo() {},
+		},
+		mounted() {
+			this.obtenerTodosLosVehiculos()
+		},
+	}
+</script>
+
+<style scoped>
+	.cursor {
+		cursor: pointer;
+	}
+	.modal {
+		position: fixed;
+		z-index: 999;
+		top: 20%;
+		left: 50%;
+		width: 300px;
+		margin-left: -150px;
+	}
+</style>
