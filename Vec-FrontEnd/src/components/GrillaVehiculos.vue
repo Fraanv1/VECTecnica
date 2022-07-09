@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="pt-2 " style="text-align:center">
-					<NuevoVehiculo></NuevoVehiculo>
+					<NuevoVehiculo @recargargrilla="recargargrilla"></NuevoVehiculo>
 				</div>
 				<div class="card mt-4">
 					<div class="card-body">
@@ -43,7 +43,10 @@
 											>
 												🗑️
 											</button>
-											<ModificarVehiculo :loadedVehiculo="vehiculo"></ModificarVehiculo>
+											<ModificarVehiculo
+												@recargargrilla="recargargrilla"
+												:loadedVehiculo="vehiculo"
+											></ModificarVehiculo>
 										</div>
 									</td>
 								</tr>
@@ -78,6 +81,9 @@
 			}
 		},
 		methods: {
+			recargargrilla: function() {
+				this.obtenerTodosLosVehiculos()
+			},
 			obtenerTodosLosVehiculos() {
 				this.loading = true
 				VehiculosController.obtenerTodosLosVehiculos()

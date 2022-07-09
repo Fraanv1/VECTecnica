@@ -124,10 +124,23 @@
 				VehiculosController.modificarVehiculo(this.datosVehiculo)
 					.then(() => {
 						this.modalAbierto = false
+						this.$emit('recargargrilla')
+						this.limpiarCampos()
 					})
 					.catch((error) => {
 						console.error(error)
 					})
+			},
+			limpiarCampos() {
+				console.log(this.datosVehiculo)
+				this.datosVehiculo.tipoVehiculo = ''
+				this.datosVehiculo.cantidadRuedas = 0
+				this.datosVehiculo.marca = 0
+				this.datosVehiculo.modelo = 0
+				this.datosVehiculo.patente = ''
+				this.datosVehiculo.chasis = 0
+				this.datosVehiculo.kmRecorridos = 0
+				this.datosVehiculo.kmMantenimiento = ''
 			},
 		},
 	}

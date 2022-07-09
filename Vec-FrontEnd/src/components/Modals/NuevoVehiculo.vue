@@ -140,7 +140,9 @@
 			agregarVehiculo() {
 				VehiculosController.agregarVehiculo(this.datosVehiculo)
 					.then(() => {
+						this.limpiarCampos()
 						this.modalAbierto = false
+						this.$emit('recargargrilla')
 					})
 					.catch((error) => {
 						console.error(error)
@@ -158,6 +160,17 @@
 					this.datosVehiculo.kmMantenimiento == ''
 				)
 					return true
+			},
+			limpiarCampos() {
+				console.log(this.datosVehiculo)
+				this.datosVehiculo.tipoVehiculo = ''
+				this.datosVehiculo.cantidadRuedas = 0
+				this.datosVehiculo.marca = 0
+				this.datosVehiculo.modelo = 0
+				this.datosVehiculo.patente = ''
+				this.datosVehiculo.chasis = 0
+				this.datosVehiculo.kmRecorridos = 0
+				this.datosVehiculo.kmMantenimiento = ''
 			},
 			cancelar() {
 				this.modalAbierto = false
