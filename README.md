@@ -3,7 +3,7 @@
 | Tecnología | Versión  |
 | ------------- | ------------- |
 | .NET Core | 6  |
-| VUE Js  | 3 |
+| VueJs  | 3 |
 
 # Inicialización del proyecto
 
